@@ -1,0 +1,173 @@
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+
+
+body {
+    background-color: rgba(33, 48, 47, 0.606);
+    color:white;
+    font-family:'Rubik';
+ }
+
+
+
+
+.h1MarketHeader {
+    font-size:100px;
+    text-align:center;
+    line-height: 50px;
+
+}
+
+@media only screen and (max-width:600px) {
+    .h1MarketHeader {
+        font-size:40px;
+        line-height:35px;
+    }
+}
+
+/* STRUCTURE */
+
+.product-grid {
+    display: grid;
+    grid: auto / repeat(2, 1fr);
+    grid-gap: 40px 20px;
+}
+
+.marketMain_SuperWrap {
+    /*add some code here AG */
+          
+}
+
+@media only screen and (max-width: 600px) {
+.marketMain_SuperWrap {
+    border-style: solid;
+}
+}
+
+/*Inner Structure? */
+
+.marketMain_Grid {
+    display:grid;
+    grid:auto / repeat(4,1fr);
+    grid-gap:10px 10px
+
+}
+
+/*MARKET ITEM STYLE AND STRUCTURE */
+
+.marketMain_Item {
+    height:250px;
+    min-width:200px;
+    max-width:100%;
+    background-color:#000000!important;
+    display: block
+    /*justify-content: center;*/
+    /*align-items: center; */
+}
+
+.marketMain_Item div{
+
+    background-color:#0fffc3!important;
+    display:block;
+    text-align:center;
+ 
+}
+
+
+
+@media only screen and (max-width: 600px) {
+.marketMain_Grid {
+    display:grid;
+    grid:auto / repeat(1,1fr);
+    grid-gap:10px 10px;
+}
+
+
+
+}
+
+
+/* END OF MARKET STRUCTURE */
+
+
+/* THE TOP NAVY */
+.navyMarketTop {
+    background-color:rgba(0, 0, 0, 0.356);
+    padding:5px;
+    height:auto;
+    align-items: center;
+    position:fixed;
+    width:100%;
+    display: none!important;
+}
+
+.pMarketDesc {
+    font-size:12px;
+    text-transform: uppercase;
+    color:white;
+    line-height: 12px;
+    text-align:center;
+}
+
+/* THE NAVY Right below the TOP NAVY */
+.navyMarketSubMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* NAVY STYLES */
+    background-color: #000000;
+    position:fixed;
+    width:100%;
+}
+
+.navyMarketSubMenu div {
+    width:100%;
+    height: 100%;
+    text-align:center;
+    background-color: rgba(89, 0, 28, 0);
+    border-style:solid;
+    border-color:white;
+    border-width: 2px;
+}
+
+
+/*topNavyContent */
+.topNavyWrapCONTENT{
+    background-color:rgba(28, 0, 128, 0.362);
+    display:flex;
+    align-items: center;
+}
+
+.topNavyItemCONTENT {
+    flex:1;
+}
+
+
+/*BUTTON STYLEZZZ */
+
+.buttonMarketTiny {
+    background-color: rgba(148, 0, 211, 0);
+    color:white;
+    border-style:solid;
+    border-color:aqua;
+    border-size:1px;
+}
+
+
+.bottomCredits {
+    text-transform: uppercase;
+    color:white;
+    font-size:12px;
+    display:flex;
+    width:100%;
+    background-color: black;
+}
+
+.bottomCredits h1,p {
+    color:rgb(0, 101, 135);
+    text-align:center;
+}
